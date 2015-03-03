@@ -1,0 +1,15 @@
+{
+  "name": "tweet-stream",
+  "version": "1.0.0",
+  "description": "WebSockets and the Twitter Streaming API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Kinney",
+  "license": "ISC",
+  "dependencies": {
+    "node-tweet-stream": "^1.6.0",
+    "socket.io": "^1.3.4"
+  }
+}
