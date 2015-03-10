@@ -10,7 +10,7 @@ var t = new Twitter({
 
 t.on('tweet', function (tweet) {
   io.emit('tweet', tweet);
-  console.log('tweet received', tweet);
+  console.log(formatTweet(tweet));
 });
 
 t.on('error', function (err) {
@@ -18,3 +18,7 @@ t.on('error', function (err) {
 });
 
 t.track('emberconf');
+
+function formatTweet(tweet) {
+  return tweet.user.name + ' (' + tweet.user.screen_name + '): ' + tweet.text;
+}
